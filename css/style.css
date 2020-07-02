@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background: black;
+}
+
+.osn {
+/*    width: 86 vw;*/
+    /*    max-height: 883px;*/
+    max-width: 960px;
+    margin: 0 auto;
+    background-image: url(../images/backgr.png);
+    background-repeat: no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /*    background-size: cover;*/
+    /*    background-size: auto auto;*/
+    /*    background-size: contain;*/
+    color: white;
+/*        border:1px solid grey;*/
+    padding: 7%;
+}
+
+img {
+    margin-bottom: 0;
+    border-radius: 2px;
+    border: 3px solid #adadad;
+    padding: 1px;
+    box-shadow: inset 5px 2px 2px 2px black;
+}
+
+.header {
+    background-image: url(../images/tree.png);
+    background-position-x: 20%;
+    width: auto;
+    min-height: 4em;
+    margin: 0 auto;
+    margin-bottom: 0;
+/*    border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1 0;
+}
+
+.land {
+/*    border: 1px solid red;*/
+    width: 30%;
+    background-image: url(../images/land.png);
+    display: inline-flex;
+    margin-top: 8%;
+    font-size: 10px;
+    min-width: 273px;
+    flex-direction: column;
+}
+
+.contact {
+/*    border: 1px solid red;*/
+    margin-top: 8%;
+    max-width: 200px;
+    font-size: 8px;
+    line-height: 10px;
+    min-width: 90px;
+    flex-direction: column;
+    text-align: left;
+}
+
+#cont {
+    font-size: 10px;
+    margin: 0;
+    /*    text-align: left;*/
+}
+
+.main {
+/*
+    display: grid;
+    grid-template-columns: auto auto auto;
+*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+/*    order: 1 1 1;*/
+}
+
+.footer {
+
+    position: relative;
+    padding-top: 10%;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 993px) {
+
+     .header{
+        justify-content: center;
+        background-position-x: 50%;
+    }
+    .main {
+     justify-content: space-around;
+    }
+   
+}
+
+@media screen and (max-width: 420px) {
+
+    .contact {
+        margin-top: 0;
+        text-align: center;
+
+    }
+    .land{
+        color: tomato;
+    }
+
+}
